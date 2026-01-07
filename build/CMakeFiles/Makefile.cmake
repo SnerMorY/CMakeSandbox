@@ -130,6 +130,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/4.2.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.2.1/CMakeRCCompiler.cmake"
   "CMakeFiles/4.2.1/CMakeSystem.cmake"
+  "D:/CPlusFiles/ManagementSandbox/new_feature/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -150,10 +151,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/4.2.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "Greeting/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "new_feature/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Sandbox.dir/DependInfo.cmake"
   "Greeting/CMakeFiles/greetlib.dir/DependInfo.cmake"
+  "new_feature/CMakeFiles/feature1.dir/DependInfo.cmake"
   )

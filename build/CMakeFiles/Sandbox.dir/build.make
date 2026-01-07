@@ -96,6 +96,7 @@ Sandbox_EXTERNAL_OBJECTS =
 Sandbox.exe: CMakeFiles/Sandbox.dir/main.cpp.obj
 Sandbox.exe: CMakeFiles/Sandbox.dir/build.make
 Sandbox.exe: Greeting/libgreetlib.a
+Sandbox.exe: new_feature/libfeature1.a
 Sandbox.exe: CMakeFiles/Sandbox.dir/linkLibs.rsp
 Sandbox.exe: CMakeFiles/Sandbox.dir/objects1.rsp
 Sandbox.exe: CMakeFiles/Sandbox.dir/link.txt

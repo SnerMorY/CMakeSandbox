@@ -64,20 +64,24 @@ CMAKE_BINARY_DIR = D:\CPlusFiles\ManagementSandbox\build
 # The main recursive "all" target.
 all: CMakeFiles/Sandbox.dir/all
 all: Greeting/all
+all: new_feature/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/Sandbox.dir/codegen
 codegen: Greeting/codegen
+codegen: new_feature/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
 preinstall: Greeting/preinstall
+preinstall: new_feature/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/Sandbox.dir/clean
 clean: Greeting/clean
+clean: new_feature/clean
 .PHONY : clean
 
 #=============================================================================
@@ -100,10 +104,30 @@ Greeting/clean: Greeting/CMakeFiles/greetlib.dir/clean
 .PHONY : Greeting/clean
 
 #=============================================================================
+# Directory level rules for directory new_feature
+
+# Recursive "all" directory target.
+new_feature/all: new_feature/CMakeFiles/feature1.dir/all
+.PHONY : new_feature/all
+
+# Recursive "codegen" directory target.
+new_feature/codegen: new_feature/CMakeFiles/feature1.dir/codegen
+.PHONY : new_feature/codegen
+
+# Recursive "preinstall" directory target.
+new_feature/preinstall:
+.PHONY : new_feature/preinstall
+
+# Recursive "clean" directory target.
+new_feature/clean: new_feature/CMakeFiles/feature1.dir/clean
+.PHONY : new_feature/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/Sandbox.dir
 
 # All Build rule for target.
 CMakeFiles/Sandbox.dir/all: Greeting/CMakeFiles/greetlib.dir/all
+CMakeFiles/Sandbox.dir/all: new_feature/CMakeFiles/feature1.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Sandbox.dir\build.make CMakeFiles/Sandbox.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Sandbox.dir\build.make CMakeFiles/Sandbox.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\CPlusFiles\ManagementSandbox\build\CMakeFiles --progress-num=1,2 "Built target Sandbox"
@@ -111,7 +135,7 @@ CMakeFiles/Sandbox.dir/all: Greeting/CMakeFiles/greetlib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Sandbox.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\CPlusFiles\ManagementSandbox\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\CPlusFiles\ManagementSandbox\build\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Sandbox.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\CPlusFiles\ManagementSandbox\build\CMakeFiles 0
 .PHONY : CMakeFiles/Sandbox.dir/rule
@@ -138,7 +162,7 @@ CMakeFiles/Sandbox.dir/clean:
 Greeting/CMakeFiles/greetlib.dir/all:
 	$(MAKE) $(MAKESILENT) -f Greeting\CMakeFiles\greetlib.dir\build.make Greeting/CMakeFiles/greetlib.dir/depend
 	$(MAKE) $(MAKESILENT) -f Greeting\CMakeFiles\greetlib.dir\build.make Greeting/CMakeFiles/greetlib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\CPlusFiles\ManagementSandbox\build\CMakeFiles --progress-num=3,4 "Built target greetlib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\CPlusFiles\ManagementSandbox\build\CMakeFiles --progress-num=5,6 "Built target greetlib"
 .PHONY : Greeting/CMakeFiles/greetlib.dir/all
 
 # Build rule for subdir invocation for target.
@@ -155,13 +179,45 @@ greetlib: Greeting/CMakeFiles/greetlib.dir/rule
 # codegen rule for target.
 Greeting/CMakeFiles/greetlib.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f Greeting\CMakeFiles\greetlib.dir\build.make Greeting/CMakeFiles/greetlib.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\CPlusFiles\ManagementSandbox\build\CMakeFiles --progress-num=3,4 "Finished codegen for target greetlib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\CPlusFiles\ManagementSandbox\build\CMakeFiles --progress-num=5,6 "Finished codegen for target greetlib"
 .PHONY : Greeting/CMakeFiles/greetlib.dir/codegen
 
 # clean rule for target.
 Greeting/CMakeFiles/greetlib.dir/clean:
 	$(MAKE) $(MAKESILENT) -f Greeting\CMakeFiles\greetlib.dir\build.make Greeting/CMakeFiles/greetlib.dir/clean
 .PHONY : Greeting/CMakeFiles/greetlib.dir/clean
+
+#=============================================================================
+# Target rules for target new_feature/CMakeFiles/feature1.dir
+
+# All Build rule for target.
+new_feature/CMakeFiles/feature1.dir/all:
+	$(MAKE) $(MAKESILENT) -f new_feature\CMakeFiles\feature1.dir\build.make new_feature/CMakeFiles/feature1.dir/depend
+	$(MAKE) $(MAKESILENT) -f new_feature\CMakeFiles\feature1.dir\build.make new_feature/CMakeFiles/feature1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\CPlusFiles\ManagementSandbox\build\CMakeFiles --progress-num=3,4 "Built target feature1"
+.PHONY : new_feature/CMakeFiles/feature1.dir/all
+
+# Build rule for subdir invocation for target.
+new_feature/CMakeFiles/feature1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\CPlusFiles\ManagementSandbox\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 new_feature/CMakeFiles/feature1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\CPlusFiles\ManagementSandbox\build\CMakeFiles 0
+.PHONY : new_feature/CMakeFiles/feature1.dir/rule
+
+# Convenience name for target.
+feature1: new_feature/CMakeFiles/feature1.dir/rule
+.PHONY : feature1
+
+# codegen rule for target.
+new_feature/CMakeFiles/feature1.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f new_feature\CMakeFiles\feature1.dir\build.make new_feature/CMakeFiles/feature1.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\CPlusFiles\ManagementSandbox\build\CMakeFiles --progress-num=3,4 "Finished codegen for target feature1"
+.PHONY : new_feature/CMakeFiles/feature1.dir/codegen
+
+# clean rule for target.
+new_feature/CMakeFiles/feature1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f new_feature\CMakeFiles\feature1.dir\build.make new_feature/CMakeFiles/feature1.dir/clean
+.PHONY : new_feature/CMakeFiles/feature1.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

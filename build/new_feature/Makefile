@@ -86,21 +86,21 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\CPlusFiles\ManagementSandbox\build\CMakeFiles D:\CPlusFiles\ManagementSandbox\build\\CMakeFiles\progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
+	cd /d D:\CPlusFiles\ManagementSandbox\build && $(CMAKE_COMMAND) -E cmake_progress_start D:\CPlusFiles\ManagementSandbox\build\CMakeFiles D:\CPlusFiles\ManagementSandbox\build\new_feature\\CMakeFiles\progress.marks
+	cd /d D:\CPlusFiles\ManagementSandbox\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 new_feature/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\CPlusFiles\ManagementSandbox\build\CMakeFiles 0
 .PHONY : all
 
 # The main codegen target
 codegen: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\CPlusFiles\ManagementSandbox\build\CMakeFiles D:\CPlusFiles\ManagementSandbox\build\\CMakeFiles\progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 codegen
+	cd /d D:\CPlusFiles\ManagementSandbox\build && $(CMAKE_COMMAND) -E cmake_progress_start D:\CPlusFiles\ManagementSandbox\build\CMakeFiles D:\CPlusFiles\ManagementSandbox\build\new_feature\\CMakeFiles\progress.marks
+	cd /d D:\CPlusFiles\ManagementSandbox\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 new_feature/codegen
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\CPlusFiles\ManagementSandbox\build\CMakeFiles 0
 .PHONY : codegen
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 clean
+	cd /d D:\CPlusFiles\ManagementSandbox\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 new_feature/clean
 .PHONY : clean
 
 # The main clean target
@@ -109,81 +109,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 preinstall
+	cd /d D:\CPlusFiles\ManagementSandbox\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 new_feature/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 preinstall
+	cd /d D:\CPlusFiles\ManagementSandbox\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 new_feature/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d D:\CPlusFiles\ManagementSandbox\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named Sandbox
+# Convenience name for target.
+new_feature/CMakeFiles/feature1.dir/rule:
+	cd /d D:\CPlusFiles\ManagementSandbox\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 new_feature/CMakeFiles/feature1.dir/rule
+.PHONY : new_feature/CMakeFiles/feature1.dir/rule
 
-# Build rule for target.
-Sandbox: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Sandbox
-.PHONY : Sandbox
-
-# fast build rule for target.
-Sandbox/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Sandbox.dir\build.make CMakeFiles/Sandbox.dir/build
-.PHONY : Sandbox/fast
-
-#=============================================================================
-# Target rules for targets named greetlib
-
-# Build rule for target.
-greetlib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 greetlib
-.PHONY : greetlib
-
-# fast build rule for target.
-greetlib/fast:
-	$(MAKE) $(MAKESILENT) -f Greeting\CMakeFiles\greetlib.dir\build.make Greeting/CMakeFiles/greetlib.dir/build
-.PHONY : greetlib/fast
-
-#=============================================================================
-# Target rules for targets named feature1
-
-# Build rule for target.
-feature1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 feature1
+# Convenience name for target.
+feature1: new_feature/CMakeFiles/feature1.dir/rule
 .PHONY : feature1
 
 # fast build rule for target.
 feature1/fast:
-	$(MAKE) $(MAKESILENT) -f new_feature\CMakeFiles\feature1.dir\build.make new_feature/CMakeFiles/feature1.dir/build
+	cd /d D:\CPlusFiles\ManagementSandbox\build && $(MAKE) $(MAKESILENT) -f new_feature\CMakeFiles\feature1.dir\build.make new_feature/CMakeFiles/feature1.dir/build
 .PHONY : feature1/fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+feature1.obj: feature1.cpp.obj
+.PHONY : feature1.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Sandbox.dir\build.make CMakeFiles/Sandbox.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+feature1.cpp.obj:
+	cd /d D:\CPlusFiles\ManagementSandbox\build && $(MAKE) $(MAKESILENT) -f new_feature\CMakeFiles\feature1.dir\build.make new_feature/CMakeFiles/feature1.dir/feature1.cpp.obj
+.PHONY : feature1.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+feature1.i: feature1.cpp.i
+.PHONY : feature1.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Sandbox.dir\build.make CMakeFiles/Sandbox.dir/main.cpp.i
-.PHONY : main.cpp.i
+feature1.cpp.i:
+	cd /d D:\CPlusFiles\ManagementSandbox\build && $(MAKE) $(MAKESILENT) -f new_feature\CMakeFiles\feature1.dir\build.make new_feature/CMakeFiles/feature1.dir/feature1.cpp.i
+.PHONY : feature1.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+feature1.s: feature1.cpp.s
+.PHONY : feature1.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Sandbox.dir\build.make CMakeFiles/Sandbox.dir/main.cpp.s
-.PHONY : main.cpp.s
+feature1.cpp.s:
+	cd /d D:\CPlusFiles\ManagementSandbox\build && $(MAKE) $(MAKESILENT) -f new_feature\CMakeFiles\feature1.dir\build.make new_feature/CMakeFiles/feature1.dir/feature1.cpp.s
+.PHONY : feature1.cpp.s
 
 # Help Target
 help:
@@ -194,12 +169,10 @@ help:
 	@echo ... codegen
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Sandbox
 	@echo ... feature1
-	@echo ... greetlib
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... feature1.obj
+	@echo ... feature1.i
+	@echo ... feature1.s
 .PHONY : help
 
 
@@ -211,6 +184,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d D:\CPlusFiles\ManagementSandbox\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

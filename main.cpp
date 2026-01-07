@@ -1,11 +1,12 @@
 #include <cstdlib>
 #include <iostream>
 #include "greeting.h"
+#include "feature1.h"
 
-int main() {
-	// std::cout << "Hello world!" << std::endl;
-	
+int main()
+{
 	Greet();
+	Feature1("Borsch");
 
 	system("pause");
 	return 0;

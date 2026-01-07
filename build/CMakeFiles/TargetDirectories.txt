@@ -4,3 +4,6 @@ D:/CPlusFiles/ManagementSandbox/build/CMakeFiles/rebuild_cache.dir
 D:/CPlusFiles/ManagementSandbox/build/Greeting/CMakeFiles/greetlib.dir
 D:/CPlusFiles/ManagementSandbox/build/Greeting/CMakeFiles/edit_cache.dir
 D:/CPlusFiles/ManagementSandbox/build/Greeting/CMakeFiles/rebuild_cache.dir
+D:/CPlusFiles/ManagementSandbox/build/new_feature/CMakeFiles/feature1.dir
+D:/CPlusFiles/ManagementSandbox/build/new_feature/CMakeFiles/edit_cache.dir
+D:/CPlusFiles/ManagementSandbox/build/new_feature/CMakeFiles/rebuild_cache.dir
