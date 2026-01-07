@@ -1,0 +1,2 @@
+C:\msys64\ucrt64\bin\ar.exe qc libgreetlib.a CMakeFiles/greetlib.dir/greeting.cpp.obj
+C:\msys64\ucrt64\bin\ranlib.exe libgreetlib.a

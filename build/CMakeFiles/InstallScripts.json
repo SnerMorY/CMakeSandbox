@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/CPlusFiles/ManagementSandbox/build/cmake_install.cmake",
+		"D:/CPlusFiles/ManagementSandbox/build/Greeting/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
