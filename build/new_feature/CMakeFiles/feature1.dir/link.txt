@@ -1,2 +1,0 @@
-C:\msys64\ucrt64\bin\ar.exe qc libfeature1.a CMakeFiles/feature1.dir/feature1.cpp.obj
-C:\msys64\ucrt64\bin\ranlib.exe libfeature1.a
