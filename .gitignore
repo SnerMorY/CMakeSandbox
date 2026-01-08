@@ -1,1 +1,4 @@
-Development
+Development/
+Build/
+*.o
+*.exe
